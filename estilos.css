@@ -1,0 +1,213 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #344e41, #283618);
+    color: #f1faee;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    background: rgba(27, 67, 50, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: #dda15e;
+    color: black;
+}
+
+/* CONTENEDOR */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* TITULOS */
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
+    color: #f1faee;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #dda15e;
+    font-size: 1.1rem;
+}
+
+/* GRID TARJETAS INICIO */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+/* TARJETAS INICIO */
+.card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    position: relative;
+}
+
+/* EFECTO HOVER */
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(221,161,94,0.25);
+    box-shadow: 0 0 25px rgba(221,161,94,0.6);
+}
+
+/* ICONOS */
+.card img {
+    width: 90px;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* TITULO TARJETAS */
+.card h2 {
+    margin-bottom: 12px;
+    color: #dda15e;
+}
+
+/* TEXTO TARJETAS */
+.card p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* TARJETA WAYUU */
+.wayuu {
+    background: rgba(188,108,37,0.25);
+}
+
+/* PAGINAS INTERNAS */
+.card-big {
+    background: rgba(255,255,255,0.08);
+    padding: 35px;
+    border-radius: 22px;
+    margin-bottom: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.35);
+}
+
+/* EFECTO TARJETAS GRANDES */
+.card-big:hover {
+    transform: scale(1.015);
+    background: rgba(221,161,94,0.22);
+    box-shadow: 0 0 30px rgba(221,161,94,0.5);
+}
+
+/* TITULOS INTERNOS */
+.card-big h2 {
+    color: #dda15e;
+    margin-bottom: 15px;
+}
+
+/* PARRAFOS */
+.card-big p {
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* MAPAS */
+iframe {
+    width: 100%;
+    height: 420px;
+    border: none;
+    border-radius: 18px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* SCROLL */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #283618;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dda15e;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+}
+
+/* TARJETA RUBIERA */
+.rubiera {
+    background: rgba(120,40,40,0.35);
+}
+
+.rubiera:hover {
+    background: rgba(180,60,60,0.5);
+}
